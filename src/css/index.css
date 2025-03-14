@@ -31,7 +31,7 @@ body{
 }
 main{
     margin: 0 auto;
-    max-width: 120em;
+    max-width: 100em;
 }
 .main-image{
     position: relative;
@@ -47,7 +47,7 @@ main{
 }
 .names-top{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* background: rgba(255, 255, 255, 0.6); */
@@ -63,16 +63,13 @@ main{
     justify-content: space-around;
 }
 #days-count, #hours-count, #minutes-count, #seconds-count{
-    font-family: "Dosis", sans-serif;
+    /* font-family: "Dosis", sans-serif; */
+    font-family: "Pinyon Script", cursive;
     display: flex;
     flex-direction: column;
     padding: .4em;
 }
 #clock{
-    /* position: absolute; */
-    /* top: 100%;
-    left: 25%;
-    transform: translate(-45%, -40%); */
     margin-top: .5em;
     font-family: "Dosis", sans-serif;
     font-size: 4.3em;
@@ -81,5 +78,79 @@ main{
     padding: .2em;
     text-align: center;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 3px solid #D5A8A0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.wedding-info-title{
+    padding: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border: 3px solid #D5A8A0;
+    border-radius: 15px;
+    margin: 2.3em 0em;
+}
+.wedding-info-title h1, .wedding-info-title h2, .wedding-info-title h3{
+    font-family: "Pinyon Script", cursive;
+    font-weight: 550;
+    text-align: center;
+}
+.wedding-info-title h1{
+    font-size: 5em;
+}
+.wedding-info-title h2{
+    font-size: 3.2em;
+}
+.wedding-info-title h3{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 2.2em;
+}
+.second-block-container{
+    padding: 1em;
+    border-radius: 15px;
+    border: solid 3px #D5A8A0;
+    background: rgba(255, 255, 255, 0.3);
+}
+.venue{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    /* border: 3px solid #D5A8A0; */
+    /* background-color: #B56E79; */
+    max-width: 85%;
+    margin: 1em auto;
+}
+.wedding-infos-block{
+    margin-top: 2.3em;
+}
+.venue-infos, .dress-infos, .sealings-infos{
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+.venue-infos p, .dress-infos p, .sealings-infos p{
+    font-family: "Dosis", sans-serif;
+    font-size: 1.4em;
+    line-height: 2.5em;
+}
+#venue-map-svg, #dress-code-svg, #temple-img{
+    border-radius: 50%;
+    max-width: 20em;
+}
+.divisor{
+    border-left: solid 3px #D5A8A0; 
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.dressCode, .sealing{
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 9em auto 3em;
+    padding: 1.5em;
+}
+.sealings-infos a{
+    text-decoration: none;
+    color: black;
 }
