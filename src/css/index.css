@@ -87,11 +87,15 @@ main{
     border: 3px solid #D5A8A0;
     border-radius: 15px;
     margin: 2.3em 0em;
+    background-color: #8E3F4C;
 }
 .wedding-info-title h1, .wedding-info-title h2, .wedding-info-title h3{
     font-family: "Pinyon Script", cursive;
     font-weight: 550;
     text-align: center;
+}
+.matrimonio-title{
+    color: #EDD3BD;
 }
 .wedding-info-title h1{
     font-size: 5em;
@@ -109,6 +113,7 @@ main{
     border-radius: 15px;
     border: solid 3px #D5A8A0;
     background: rgba(255, 255, 255, 0.3);
+    background-color: #8E3F4C;
 }
 .venue{
     display: flex;
@@ -120,7 +125,10 @@ main{
     margin: 1em auto;
 }
 .wedding-infos-block{
-    margin-top: 2.3em;
+    margin: 2.3em 3.2em 2.3em;
+    padding: 1em;
+    background-color:#F4E1C6;
+    border-radius: 20px;
 }
 .venue-infos, .dress-infos, .sealings-infos{
     text-align: center; 
