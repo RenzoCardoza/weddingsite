@@ -7,31 +7,40 @@ body{
     background-color: #F4E1C6;
 }
 .top-side{
-    padding: 1em;
     width: 100%;
-    display: flex;
-    justify-content: end;
-    background-color: #B56E79;
+    background-color: #8E3F4C;
     margin-bottom: 2em;
 }
 .nav-bar{
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
 }
 .nav-bar a{
     text-decoration: none;
-    margin: 0 1em;
-    padding: 1em;
+    text-align: center;
+    padding: 1.3em 1em;
+    width: 100%;
     color: black;
     font-family: "Dosis", sans-serif;
-    border-radius: 10px;
+    font-size: 1.2em;
 }
 .nav-bar a:hover{
     background: rgba(255, 255, 255, .5);
 }
+.rsvpBtn{
+    padding: 1.1em;
+    margin-top: .8em;
+    background-color: #7B1B38;
+    max-width: 40%;
+    justify-self: center;
+    color: #EDD3BD;
+    border-radius: 15px;
+    font-family: "Dosis", sans-serif;
+}
 main{
     margin: 0 auto;
-    max-width: 100em;
+    max-width: 98em;
 }
 .main-image{
     position: relative;
@@ -81,7 +90,7 @@ main{
     border: 3px solid #D5A8A0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.wedding-info-title{
+.wedding-info-title, .regalos{
     padding: 1em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border: 3px solid #D5A8A0;
@@ -89,10 +98,14 @@ main{
     margin: 2.3em 0em;
     background-color: #8E3F4C;
 }
-.wedding-info-title h1, .wedding-info-title h2, .wedding-info-title h3{
+.wedding-info-title h1, .wedding-info-title h2, .wedding-info-title h3, .regalos h1{
     font-family: "Pinyon Script", cursive;
     font-weight: 550;
     text-align: center;
+}
+.regalos h1{
+    font-size: 4.4em;
+    color: #EDD3BD;
 }
 .matrimonio-title{
     color: #EDD3BD;
@@ -108,7 +121,7 @@ main{
     margin-bottom: .5em;
     font-size: 2.2em;
 }
-.second-block-container{
+.second-block-container, .regalos-container{
     padding: 1em;
     border-radius: 15px;
     border: solid 3px #D5A8A0;
@@ -119,8 +132,6 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
-    /* border: 3px solid #D5A8A0; */
-    /* background-color: #B56E79; */
     max-width: 85%;
     margin: 1em auto;
 }
@@ -130,35 +141,129 @@ main{
     background-color:#F4E1C6;
     border-radius: 20px;
 }
-.venue-infos, .dress-infos, .sealings-infos{
-    text-align: center; 
+.venue-infos, .dress-infos, .sealings-infos, .brasil-infos{
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1em;
 }
-.venue-infos p, .dress-infos p, .sealings-infos p{
+.venue-infos p, .dress-infos p, .sealings-infos p, .brasil-infos p{
     font-family: "Dosis", sans-serif;
     font-size: 1.4em;
     line-height: 2.5em;
 }
-#venue-map-svg, #dress-code-svg, #temple-img{
+.venue-infos a, .sealings-infos a, .brasil-infos a{
+    text-decoration: none;
+    color: black;
+}
+.dress-infos{
+    max-width: 50%;
+}
+.dress-infos p{
+    font-size: 1em;
+}
+#venue-map-svg, #dress-code-svg, #temple-img, #dinner-img{
     border-radius: 50%;
     max-width: 20em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .divisor{
-    border-left: solid 3px #D5A8A0; 
+    border-left: solid 3px #D5A8A0;
     margin-left: 1em;
     margin-right: 1em;
 }
-.dressCode, .sealing{
+.dressCode, .sealing, .brasil{
     display: flex;
     justify-content: space-between;
     max-width: 85%;
     margin: 9em auto 3em;
     padding: 1.5em;
 }
-.sealings-infos a{
-    text-decoration: none;
-    color: black;
+#colors{
+    margin-top: .8em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+}
+#cedar-rose-color{
+    padding: .2em .9em;
+    font-style: italic;
+    border-radius: 15px;
+    color: #EDD3BD;
+    background-color: #D97F7F;
+}
+#Terracota{
+    padding: .2em .9em;
+    font-style: italic;
+    border-radius: 15px;
+    color: #EDD3BD;
+    background-color: #AE2C23;
+}
+#Burgundy{
+    padding: .2em .9em;
+    font-style: italic;
+    border-radius: 15px;
+    color: #EDD3BD;
+    background-color: #7B1B38;
+}
+#giftbox{
+    max-width: 23vh;
+    border-radius: 50%;
+    align-self: center;
+}
+.bank-title-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.2em;
+    margin: 1em 4em;
+    background-color: #EDD3BD;
+    border-radius: 15px;
+}
+.gift-p{
+    font-family: "Dosis", sans-serif;
+    font-size: 1.4em;
+    line-height: 2.5em;
+    text-align: center;
+}
+#bank-data{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+#arrow{
+    max-width: 5vh;
+    align-self: center;
+    margin-top: 3em;
+}
+.bank-br, .bank-py{
+    padding: 1.5em 5em;
+    margin: 2em 0em;
+    background-color: #F4E1C6;
+    border: 3px solid #7B1B38;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bank-br h3, .bank-py h3{
+    font-family: "Dosis", sans-serif;
+    font-size: 1.4em;
+    font-style: italic;
+}
+.bank-br p, .bank-py p{
+    letter-spacing: .1em;
+    font-family: "Dosis", sans-serif;
+    margin-top: 1em;
+    line-height: 1.9em;
+}
+.titulo-bank{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: .5em;
+}
+.regalos-container{
+    border: solid 3px #D5A8A0;
 }

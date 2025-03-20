@@ -30,3 +30,16 @@ const clockFunction = setInterval(function(){
         document.getElementById("clock").innerHTML = "Ya nos Casamos!";
     }
 }, 1000);
+
+//container of the card
+let card = document.querySelector('.flip-card');
+
+//get button for changing cards
+const presentbtn = document.getElementById("bankingBtn").addEventListener("click", () =>{
+    card.classList.toggle("flipped");
+})
+
+//turn back the card
+const returnBtn = document.querySelector("#okBtn").addEventListener("click", () =>{
+    card.classList.toggle("flipped");
+})

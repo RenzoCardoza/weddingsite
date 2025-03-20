@@ -14,16 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </head>
 <body>
     <header>
         <section class="top-side">
             <nav>
                 <ul class="nav-bar">
-                    <a href="#"><li>Contacto</li></a>
-                    <a href="#"><li>Local/Horarios</li></a>
-                    <a href="#"><li class="confirmar-btn">Confirmar Presencia</li></a>
+                    <a href="https://wa.me/qr/K5IGN7SDN6FRO1" target="_blank"><li>Contacto</li></a>
+                    <a href="#locales"><li>Local/Horarios</li></a>
+                    <a href="https://forms.gle/Udk2BCwU5VY9jDbe9" target="_blank"><li class="confirmar-btn">Confirmar Presencia</li></a>
                 </ul>
             </nav>
         </section>
@@ -59,10 +59,10 @@
             </div>    
         </section>
 
-        <section class="wedding-info-title">
+        <section class="wedding-info-title" id="locales">
             <div class="second-block-container">
-                <h1 class="matrimonio-title">Nos Casamos!</h1>
-                <h2 class="matrimonio-title">Y nos encantaria que puedas compartir con nosotros en nuestro dia especial!</h2>
+                <h1 class="matrimonio-title">¡Nos vamos a Casar!</h1>
+                <h2 class="matrimonio-title">¡Y nos encantaria que puedas compartir con nosotros en nuestro dia especial!</h2>
                 <div class="wedding-infos-block">
                     <div class="venue">
                         <img src="/src/images/venuemap.svg" alt="venue-map" id="venue-map-svg">
@@ -71,18 +71,24 @@
                             <h2>Ceremonia Matrimonio Civil</h2>
                             <h3>19 de Abril de 2025</h3>
                             <p>
-                                *nombre de la capilla | 09:00 AM<br>
-                                *direccion de la capilla
+                                Capilla Moroni | 09:00 AM<br>
+                                <a href="https://maps.app.goo.gl/Ny3LZ5khVUFBcF4UA" target="_blank">📍Brasilia 601, Asunción 1441, Paraguay</a> 
                             </p>
+                            <a href="https://forms.gle/Udk2BCwU5VY9jDbe9" target="_blank"><div class="rsvpBtn">Confirmar Presencia</div></a>
                         </div>
                     </div>
                     <div class="dressCode">
                         <div class="dress-infos">
-                            <h2>Dress Code</h2>
-                            <h3>Nos gustaria que la vestimenta sea formal</h3>
+                            <h2>Vestimenta</h2>
+                            <h3>Formal</h3>
                             <p>
-                                informaciones
+                                Recuerda, lo más importante para nosotros es que estés cómodo. Pero nos gustaría que la vestimenta fuera formal.
                             </p>
+                            <div id="colors">
+                                <p id="cedar-rose-color">Cedar Rose</p>
+                                <P id="Terracota">Terracota</P>
+                                <p id="Burgundy">Bordeaux</p>
+                            </div>
                         </div>
                         <div class="divisor"></div>
                         <img src="/src/images/dresscode.svg" alt="dresscode" id="dress-code-svg">
@@ -97,14 +103,65 @@
                                 Templo de Asunción, Paraguay<br>
                                 <a href="https://maps.app.goo.gl/3tqGurUGaRWZJHT49" target="_blank">📍 Av. Brasilia, Av. España 601 Entre, Asunción 1441, Paraguay</a>
                             </p>
+                            <a href="https://forms.gle/Udk2BCwU5VY9jDbe9" target="_blank"><div class="rsvpBtn">Confirmar Presencia</div></a>
                         </div>
                     </div>
-                    <div class="gifts-list">
-
+                    <div class="brasil">
+                        <div class="brasil-infos">
+                            <h2>Jantar Comemorativo</h2>
+                            <h3>03 de Maio de 2025</h3>
+                            <p>
+                                Vila Prime Restaurante<br>
+                                <a href="https://maps.app.goo.gl/Gkj9R2K6bpjL1RxZA" target="_blank">📍 Av. Braz Leme, 1770 - Casa Verde, São Paulo - SP, 02511-000</a> 
+                            </p>
+                            <a href="https://forms.gle/Udk2BCwU5VY9jDbe9" target="_blank"><div class="rsvpBtn">Confirmar Presencia</div></a>
+                        </div>
+                        <div class="divisor"></div>
+                        <img src="images/dinner-image.svg" alt="dinner-icon" id="dinner-img">
                     </div>
                 </div>
             </div>
         </section>
+        <section class="regalos">
+            <div class="regalos-container">
+                <h1>Presentes y Regalos</h1>
+                    <div class="banking">
+                        <div class="bank-title-img">
+                            <img src="images/giftbox-png.png" alt="giftbox icon" id="giftbox">
+                            <p class="gift-p">
+                                Nos llenará de alegria contar con su presencia en nuestra celebración
+                                <br>
+                                Si está a su disposición brindar una muestra de cariño, estaremos muy agradecidos.
+                            </p>
+                            <img src="images/arrow-down.svg" alt="down-arrow" id="arrow">
+                            <div id="bank-data">
+                                <div class="bank-py">
+                                    <h3>Cuenta Bancaria - Paraguay</h3>
+                                    <h3 class="titulo-bank">Novia</h3>
+                                    <p>
+                                        Titular: Arami Araceli Fernandez Jara<br>
+                                        CI: 4332745<br>
+                                        Entidad: Ueno Bank<br>
+                                        No. de Cuenta: 619275517<br>
+                                        Moneda: GS
+                                    </p>
+                                </div>
+                                <div class="bank-br">
+                                    <h3>Cuenta Bancaria - Brasil</h3>
+                                    <h3 class="titulo-bank">Novio</h3>
+                                    <p>
+                                        Pix (CPF): 24244098895<br>
+                                        Titular: Renzo Cardoza Carrasco<br>
+                                        Banco: Santander Brasil<br>
+                                        Moneda: BRL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
     </main>
 </body>
+<script src="js/main.js"></script>
 </html>
