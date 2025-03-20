@@ -41,7 +41,7 @@ body{
 main{
     margin: 0 1em;
 }
-.main-image{
+.banner-container{
     position: relative;
 }
 .main-image img{
@@ -54,17 +54,19 @@ main{
     border: 3px solid;
     margin-right: 1em;
 }
-.names-top{
+.title-container{
     position: absolute;
-    top: 19%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.names-top{
     /* background: rgba(255, 255, 255, 0.6); */
     font-family: "Pinyon Script", cursive;
     font-weight: 570;
-    font-size: 1.8em;
+    font-size: 1.6em;
     border-radius: 8px;
-    padding: .5em;
+    padding: .3em;
     border: 2px solid;
 }
 .clock{
