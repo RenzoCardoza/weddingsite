@@ -42,8 +42,15 @@
         margin: 0 auto;
         max-width: 98em;
     }
-    .main-image{
+    .banner-container{
+        margin-top: 2em;
         position: relative;
+    }
+    .title-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .main-image img{
         width: 100%;
@@ -55,16 +62,11 @@
         border: 3px solid;
     }
     .names-top{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* background: rgba(255, 255, 255, 0.6); */
         font-family: "Pinyon Script", cursive;
         font-weight: 570;
-        font-size: 8em;
-        border-radius: 8px;
-        padding: .8em;
+        font-size: 6em;
+        border-radius: 10px;
+        padding: .5em;
         border: 2.5px solid;
     }
     .clock{
@@ -72,7 +74,6 @@
         justify-content: space-around;
     }
     #days-count, #hours-count, #minutes-count, #seconds-count{
-        /* font-family: "Dosis", sans-serif; */
         font-family: "Pinyon Script", cursive;
         display: flex;
         flex-direction: column;
@@ -129,7 +130,7 @@
         background-color: #8E3F4C;
     }
     .venue{
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         padding: 1.5em;
         max-width: 85%;
@@ -180,10 +181,13 @@
         margin: 9em auto 3em;
         padding: 1.5em;
     }
+    .dressCode, .sealing, .brasil{
+        flex-direction: row;
+    }
     #colors{
         margin-top: .8em;
         font-size: 1.2em;
-        display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
     #cedar-rose-color{
@@ -228,7 +232,7 @@
         text-align: center;
     }
     #bank-data{
-        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         margin-top: 2em;
     }
